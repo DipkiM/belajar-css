@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar CSS</title>
+    <link rel="Stylesheet" href="apps/css/Belajar css.css" />
+    <!-- nah untuk menggunakan external stylesheet, kita harus menghubungkan terlebih dahulu
+         html nya ke file css, dngn menggunakan tag link rel nya stylesheet, dan href(sumberny) lokasi 
+         file css kita -->
+
+    <!-- <style element> (menggunakan element style) -->
+    <style>
+      h2 {
+        color: red;
+        /* nah jadi kita menggunakan style untuk h2 merubah warna tulisan menjadi merah
+            cntoh ketika kita menduplikat h2 nya menjadi bnyak maka smua h2 akan menjadi merah
+            krena disini kita membuat apapu element yang bertipe h2 menjadi merah */
+        font-family: Arial, Helvetica, sans-serif;
+        /* tapi yang jadi kendalanya, walaupun terlihat lebih rapih tapi ini tetap tidak disarankan
+            knapa? bayangkan element style ini akan berada di setiap file html, berarti kita tetap harus
+            membuat ulang. nah hal2 seperti ini tidak akan kita lakukan ketika menggunakan cara
+            External Stylesheet */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Inline Style (menuliskan style langsung pada elemen yang dituju)-->
+    <!-- cnth saya ingin membuat tulisan belajar css iitu berwarna merah dan klik saya background ny
+      berwarna biru -->
+    <h1 style="color: red">Belajar Css</h1>
+    <button style="background-color: blue; color: white">Klik Saya</button>
+    <!-- nah dngn bgini tulisan css berwarna merah dan background color berubah warna menjadi biru -->
+    <!-- knpa ini tidak direkomendasikan, karena setiap kita menambahkan style pada element yang sama kita
+     harus menambahkan style nya lagi, contoh kita akan membuat style h1 yang lain dan ingin memakai
+     style yang sama pada h1 sbelumnya, maka kita harus mengetikan hal serupa pada h1 yang lain. -->
+
+    <h2>Css Tutor</h2>
+    <h2>Css Tutor</h2>
+    <h2>Css Tutor</h2>
+    <h2>Css Tutor</h2>
+
+    <h3>Belajar Css</h3>
+    <!-- contoh kita ingin mengubah h3 ini dngn menggunakan external stylesheet -->
+  </body>
+</html>

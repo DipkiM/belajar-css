@@ -1,0 +1,11 @@
+/* External Stylesheet */
+h3{
+    color: aquamarine;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1{
+    color: aqua;
+    font-size: small;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
