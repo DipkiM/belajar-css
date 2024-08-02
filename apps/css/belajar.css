@@ -5,8 +5,8 @@ h3{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 h1{
-    color: aqua;
-    font-size: small;
+    color: rgb(166, 228, 241);
+    font-size: large;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 button, p{
@@ -14,6 +14,6 @@ button, p{
     jika elemen tersebut ingin memiliki style yg sama itu akan mempermudah kalian, jadi tidak harus membuat
     style yang baru dngn elemen yang baru */
     color: green;
-    background-color: darkkhaki;
+    background-color: #5edbc2;
     /* nah kalau background color, sperti namanya kita akan mengubah warna background dari elemen tersebut */
 }
