@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+    /* TEXT ALIGN START: berarti dia mulai dari kiri, maka dia tidak akan mengubah apapun 
+        END : ini akan membuat tulisan apapun yang ada di <h1> akan dimulai dari kanan
+        JUSTIFY : ini akan membuat tulisan kanan kiri
+        CENTER : ini akan membuat tulisan kita berada di tengah*/
+}
+p{
+    text-align: center;
+    font-weight: bolder;
+    /* FONT WEIGHT untuk mengatur ketebalan dari tulisan 
+    dngn value : lighter, normal, bolder, bold, 100-900
+    smakin besar value nya smakin tebal tulisan nya*/
+    text-decoration: underline red;
+    
+    line-height: 2;
+    /* ini adalah contoh LINE HEIGHT dngn nilai point 2.0 kalau .0 gk usah ditulis lagi, tinggal
+    type 2 saja dngn begini kita akan membuat baris antar paragraphny mempunyai spasi/ lebih tinggi*/
+
+    letter-spacing: -1px;
+    /* LETTER SPACING akan mengatur jarak antar kata/huruf, value nya ada macam macam lihat di catatan
+    (web w3school) dimana kalau nilainya minus maka akan membuat dia smakin dempet ke huruf lain nya */
+}
+h2{
+    text-align: center;
+    text-decoration: underline wavy #F2F887;
+}
+p, a{
+    text-decoration: none;
+    /* nah contoh dngn ini kita akan membuat text dekorasi kita yang tadinya a (link) itu akan ada garis 
+    bawah dngn ini itu akan menghilangkan nya */
+}
