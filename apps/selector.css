@@ -1,0 +1,11 @@
+*{
+    background-color: red;
+    /* bintang ini merupakan universal selector, yang berarti semua elemen akan memiliki backgrouncd
+    color brwarna merah */
+}
+h1,h2,h3,p,ul{
+    color: aquamarine;
+}
+li{
+    color: chartreuse;
+}
