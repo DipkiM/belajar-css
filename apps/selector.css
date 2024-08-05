@@ -19,3 +19,16 @@ h1,h2,h3,p,ul{
     descendant selector, jdi p yang berada diluar section cttan tidak akan terganti */
     color: yellow;
 }
+.cttan > p{
+    color: aqua;
+    /* nah disini kita menggunakan DIRECT SELECTOR dngn menambahkan > itu artinya kita memilih elemen p
+    yang brada di class cttan dan hanya berada di satu level yang berbeda */
+}
+
+a + button{
+    background-color: black;
+    color: whitesmoke;
+    /* dngn bgini kita menggunankan AJDACENT SELECTOR itu artinya kita menggubah button apapun
+    setelah elemen link, krena dilihat button sebelum elemen a/link tidak mengalami perubahan smaa
+    sekali */
+}
