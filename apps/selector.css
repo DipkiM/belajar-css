@@ -6,6 +6,11 @@
 h1,h2,h3,p,ul{
     color: aquamarine;
 }
-li{
+#list{
+    /* # digunakan untuk memanggil selector bertipe id */
     color: chartreuse;
+}
+.tulisan{
+    /* . digunakan untuk memanggil selector bertipe class */
+    color: blue;
 }
