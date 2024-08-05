@@ -14,3 +14,8 @@ h1,h2,h3,p,ul{
     /* . digunakan untuk memanggil selector bertipe class */
     color: blue;
 }
+.cttan p{
+    /* disini kita akan mengubah p yang ada didalam section class cttan, istilah sperti ini disebut
+    descendant selector, jdi p yang berada diluar section cttan tidak akan terganti */
+    color: yellow;
+}
