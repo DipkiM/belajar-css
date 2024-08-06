@@ -32,3 +32,8 @@ a + button{
     setelah elemen link, krena dilihat button sebelum elemen a/link tidak mengalami perubahan smaa
     sekali */
 }
+input[type='text']{
+    color: chartreuse;
+    /* dngn begini kita akan membuat input dngn type text akan kita ubah isi nya atau ketikan nya
+    berwarna sesuai yang kita inginkan */
+}
