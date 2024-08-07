@@ -1,0 +1,12 @@
+/* nah kita bisa memanipulasi setiap konten box ukuran lebar dan tinggi nya, serta bisa memanipulasi
+ukuran secara fix dngn properti width,height dll */
+div{
+    width: 200px;
+    color: crimson;
+    border:5px solid gray;
+    /* dngn ini kita membuat border dngn tebal 5px, tipe nya solid atau garis tegas dan warnanya abu
+    tipe ini ada solid, dotted dll */
+    padding: 50px;
+    /* nah dngn ini kita membuat jarang bagian atas kanan kiri bawah yaitu 50px */
+
+}
