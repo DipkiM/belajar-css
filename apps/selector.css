@@ -60,3 +60,22 @@ input:checked+label{
     color: greenyellow;
 }
 /* contoh kita membuat input yang ketika di check akan merubah checkbox dan label nya */
+section p::first-letter{
+    font-size: larger;
+    /* FIRST LETTER dngn bgini kita mengubah p yang ada di stiap section huruf pertama nya menjadi 
+    lebih besar */
+}
+section p::first-line{
+    /* FIRST LINE akan mengubah baris pertama dari suatu teks yang kita inginkan */
+    color: slateblue;
+}
+section h2::after{
+    content: "*";
+    /* nah dngn pseudo element AFTER, ini akan membuat smua h2 di section setelah nya akan ditambahkan
+    icon bintang */
+}
+section h1::before{
+    content: "#";
+    /* dngn BEFORE kita akan membuat berubah sbelum nya, dimana di sini yang diubah itu h1, jadi
+    setiap h1 yang ada di dalam section, sebelum memulai h1 akan ditambahkan konten yaitu simbol (#) */
+}
