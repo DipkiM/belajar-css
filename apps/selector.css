@@ -32,8 +32,31 @@ a + button{
     setelah elemen link, krena dilihat button sebelum elemen a/link tidak mengalami perubahan smaa
     sekali */
 }
-input[type='text']{
+input[type='password']{
     color: chartreuse;
     /* dngn begini kita akan membuat input dngn type text akan kita ubah isi nya atau ketikan nya
     berwarna sesuai yang kita inginkan */
 }
+button:hover{
+    color: blue;
+    /* HOVER, adlah pseudo class yang dapat mengubah sesuatu hal yang telah kita edit melalui css
+    dngn syarat ketika kita mengarahkan pointer atau mouse kita kearea, suatu hal atau elemen yang 
+    kita tambhkan pseudo classes
+    
+    Nah di bagian ini ketika kita mengarahkan mouse pada button maka tulisan nya akan berubah menjadi
+    warna biru*/
+    cursor: pointer;
+    font-size: larger;
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cttan:nth-of-type(1n){
+    background-color: darkcyan;
+}
+input[type="checkbox"]:checked{
+    box-shadow: 0 0 0 3px greenyellow;
+}
+input:checked+label{
+    color: greenyellow;
+}
+/* contoh kita membuat input yang ketika di check akan merubah checkbox dan label nya */
