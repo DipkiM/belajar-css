@@ -8,5 +8,10 @@ div{
     tipe ini ada solid, dotted dll */
     padding: 50px;
     /* nah dngn ini kita membuat jarang bagian atas kanan kiri bawah yaitu 50px */
-
+    margin: 20px;
+}
+div{
+    border-style: double solid dotted dashed;
+    border-width: 10px 20px 15px 20px;
+    border-color: brown green yellow darkmagenta;
 }
