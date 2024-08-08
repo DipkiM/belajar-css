@@ -1,17 +1,39 @@
 /* nah kita bisa memanipulasi setiap konten box ukuran lebar dan tinggi nya, serta bisa memanipulasi
 ukuran secara fix dngn properti width,height dll */
-div{
-    width: 200px;
-    color: crimson;
-    border:5px solid gray;
-    /* dngn ini kita membuat border dngn tebal 5px, tipe nya solid atau garis tegas dan warnanya abu
+.satu {
+  width: 200px;
+  color: crimson;
+  border: 5px solid gray;
+  /* dngn ini kita membuat border dngn tebal 5px, tipe nya solid atau garis tegas dan warnanya abu
     tipe ini ada solid, dotted dll */
-    padding: 50px;
-    /* nah dngn ini kita membuat jarang bagian atas kanan kiri bawah yaitu 50px */
-    margin: 20px;
+  margin: 20px 10px;
+  border-style: double solid dotted dashed;
+  border-width: 10px 20px 15px 20px;
+  border-color: brown green yellow darkmagenta;
+  padding: 20px 10px;
 }
-div{
-    border-style: double solid dotted dashed;
-    border-width: 10px 20px 15px 20px;
-    border-color: brown green yellow darkmagenta;
+.dua {
+  width: 200px;
+  border-style: double solid dotted dashed;
+  border-width: 10px 20px 15px 20px;
+  border-color: brown green yellow darkmagenta;
+  margin: 15px 0;
+  padding: 20px 10px;
+}
+.tiga {
+  /* padding: 50px; */
+  /* nah dngn ini kita membuat jarang bagian atas kanan kiri bawah yaitu 50px */
+
+  /* padding: 20px 10px 20px 10px; */
+  /* padding dapat juga ditulis satu satu sisi 
+  seperti ini dari mulai atas kanan bawah kiri, dimana nilai atas 20px, kanan 10px, bawah 20px,kiri 10px */
+
+  /* dan juga dapat ditulis dngn nilai vertikal horizontal
+    ccontoh kita ingin membuat atas bawah 20px dan kiri kanan 10px */
+  padding: 20px 10px;
+  border-width: 20px 10px;
+  width: 200px;
+  border-style: double solid dotted dashed;
+  border-color: brown green yellow darkmagenta;
+  margin: 30px 40px;
 }
