@@ -1,0 +1,26 @@
+h1 {
+  background-color: lightcoral;
+  /* kalau element block dia akan mengambil sluruh baris yang dimilikinya */
+  border: 5px solid black;
+  margin: 100px;
+  padding: 50px;
+  width: 300px;
+  /* nah kalau kita membuat perubahan yang sama di element block, smuanya akan terlihat dan terdapat
+  perubahan */
+  display: inline-block;
+  /* dngn value inline-block kita bisa memanipulasi elemen dngan margin dan padding tapi dngn posisi
+  yang sama seperti inline */
+}
+span {
+  /* background-color: teal; */
+  /* sedangkan inline element akan hanya mengambil sesuai isi dari kontenya saja */
+  border: 5px solid yellow;
+  width: 300px;
+  /* gak ngaruh apa apa karena elemen bertipe inline tidak bisa diubah lebarnya */
+  padding: 50px;
+  /* inline bisa diubah dngn padding, tetapi hanya akan mengubah sisi horizontal nya saja */
+  margin: 100px;
+  display: block;
+  /* dngn menggunakan properti display, kita dapat membuat element defaultnya berganti ketipe lain
+  contohnya disini span yang awalnya inline bisa diganti menjadi block */
+}
