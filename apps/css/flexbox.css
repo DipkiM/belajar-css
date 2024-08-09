@@ -11,13 +11,13 @@ h1{
     /* ini dibuat supaya dia brada di tengah */
     border: 5px solid #003049;
     display: flex ;
-    /* flex-direction: row; */
+    flex-direction: row;
     /* maka tidak akan ada perubahan karena scara default nya row */
     
     /* flex-direction: row-reverse; */
     /* nah dngn ini ia akan memulai dari arah sbaliknya */
 
-    flex-direction: column-reverse;
+    /* flex-direction: column-reverse; */
     /* ini akan membuat dia berarah menjadi sbuah kolom(atas ke bawah) serta secara tidak sengaja
     dia akan bertampilan sperti block, tetapi lebar nya tidak akan melebihi container pembungkusnya
     krena dia tidak berukuran asli, soalnya kita hanya menaruh lebar container 500px, dan itu membuat
@@ -29,6 +29,25 @@ h1{
     berukuran 200px dimana ada 5 div berarti kita harus memiliki stidak nya container berukuran 1000px
     jika ingin menggunakan ukuran div aseline. dimana disini kita contohkan dngn menggunakan container
     berukuran 1200px (sudah berlebih) bisa terlihat disini kita masih punya space kosong berukuran 200px*/
+
+    /* justify-content: flex-start; */
+    /* tampilanya gdk yg berubah krena ini nilai default */
+
+    /* justify-content: flex-end; */
+    /* nah jika kalian perhatikan angka satu dua tiga, atau kotak dimulai dari kanan tapi posisi nya
+    seperti saat kita menggunakan flex direction row-reverse */
+
+    /* justify-content: center; */
+    /* hasilnya akan di tengah */
+
+    /* justify-content: space-between; */
+    /* jadi ada jarak di masing2 kontenya, atau antar elemen dia memiliki jarak */
+
+    /* justify-content: space-around; */
+    /* jarak antar konten ini lebih besar dari pada jarak antar batas dari si kontainer */
+
+    justify-content: space-evenly;
+    /* jarak antar konten elemen dan batas container dibagi rata */
 }
 .container div{
     height: 200px;
