@@ -1,0 +1,44 @@
+h1{
+    text-align: center;
+    /* membuat tulisan rata tengah */
+}
+.container{
+    background-color: #003049;
+    width: 90%;
+    height: 1200px;
+    /*  */
+    margin: 0 auto;
+    /* ini dibuat supaya dia brada di tengah */
+    border: 5px solid #003049;
+    display: flex ;
+    /* flex-direction: row; */
+    /* maka tidak akan ada perubahan karena scara default nya row */
+    
+    /* flex-direction: row-reverse; */
+    /* nah dngn ini ia akan memulai dari arah sbaliknya */
+
+    flex-direction: column-reverse;
+    /* ini akan membuat dia berarah menjadi sbuah kolom(atas ke bawah) serta secara tidak sengaja
+    dia akan bertampilan sperti block, tetapi lebar nya tidak akan melebihi container pembungkusnya
+    krena dia tidak berukuran asli, soalnya kita hanya menaruh lebar container 500px, dan itu membuat
+    dia diatur scara otomatis lebarnya agar menyesuaikan container ketika kita menggunakan display ber
+    value flex.
+    
+    NAH GIMANA KALAU KITA MEMBUAT CONTAINER LEBARNYA 1200 atau ketika kalian menjumlah total
+    dari smua div yang kita punya itu akan cukup sesuai aslinya, contoh disini div atau kotak kita
+    berukuran 200px dimana ada 5 div berarti kita harus memiliki stidak nya container berukuran 1000px
+    jika ingin menggunakan ukuran div aseline. dimana disini kita contohkan dngn menggunakan container
+    berukuran 1200px (sudah berlebih) bisa terlihat disini kita masih punya space kosong berukuran 200px*/
+}
+.container div{
+    height: 200px;
+    width: 200px;
+    /* temen temen bisa memperhatikan div ini akan melewati batas container krena container hanya
+    memiliki tinggi 500px sdngkan masing masing div nya bernilai 200px, so otomatis pada div ke 3 dia
+    sudah melewati container
+    
+    NAH DISINI KITA AKAN MENERAPKAN FLEX*/
+    color: red;
+    font-size: larger;
+    text-align: center;
+}
