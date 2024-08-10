@@ -6,12 +6,11 @@ h1{
     background-color: #003049;
     width: 90%;
     height: 500px;
-    /*  */
     margin: 0 auto;
     /* ini dibuat supaya dia brada di tengah */
     border: 5px solid #003049;
     display: flex ;
-    flex-direction: column;
+    flex-direction: row;
     /* maka tidak akan ada perubahan karena scara default nya row */
     
     /* flex-direction: row-reverse; */
@@ -64,13 +63,13 @@ h1{
 
     /* KITA AKAN BELAJAR PENERAPAN ALIGN ITEM 
     1.FLEX-START*/
-    /* align-items: flex-start; */
+    align-items: flex-start;
     /* ini tidak akan berubah apa apa, tpi untuk membuktikan fungsinya, coba kita ubah dulu ukuran
     dari setiap div(kotak) scara manual atau satu persatu, nah dngn begini akan kliatan perubahan nya
     FLEX-START smua akan rata dimulai dari atas 
     
     2.Center */
-    align-items: center;
+    /* align-items: center; */
     /* maka smua akan dimulai dari tengah 
     
     3.Flex-end*/
@@ -85,6 +84,8 @@ h1{
     4.Baseline*/
     /* align-items: baseline; */
 
+    /* KITA AKAN MEMPELAJARI TENTANG ALIGN CONTENT */
+    /* align-content: space-between; */
     
 }
 .container div{
@@ -96,4 +97,23 @@ h1{
     
     NAH DISINI KITA AKAN MENERAPKAN FLEX*/
     
+}
+
+/* KITA AKAN BELAJAR MEMAKAI ALIGN-SELF
+sperti namanya ini digunakan ketika kita ingin mengubah suatu hal scara spesifik */
+
+.alself:hover{
+    align-self: center;
+}
+div:nth-of-type(1){
+    align-self: flex-start;
+}
+div:nth-of-type(3){
+    align-self: self-end;
+}
+div:nth-of-type(4){
+    align-self: center;
+}
+div:nth-of-type(5){
+    align-self: center;
 }
