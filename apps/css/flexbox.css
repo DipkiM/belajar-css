@@ -11,7 +11,7 @@ h1{
     /* ini dibuat supaya dia brada di tengah */
     border: 5px solid #003049;
     display: flex ;
-    flex-direction: row;
+    flex-direction: column;
     /* maka tidak akan ada perubahan karena scara default nya row */
     
     /* flex-direction: row-reverse; */
@@ -30,14 +30,14 @@ h1{
     jika ingin menggunakan ukuran div aseline. dimana disini kita contohkan dngn menggunakan container
     berukuran 1200px (sudah berlebih) bisa terlihat disini kita masih punya space kosong berukuran 200px*/
 
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
     /* tampilanya gdk yg berubah krena ini nilai default */
 
     /* justify-content: flex-end; */
     /* nah jika kalian perhatikan angka satu dua tiga, atau kotak dimulai dari kanan tapi posisi nya
     seperti saat kita menggunakan flex direction row-reverse */
 
-    /* justify-content: center; */
+    justify-content: center;
     /* hasilnya akan di tengah */
 
     /* justify-content: space-between; */
@@ -49,18 +49,43 @@ h1{
     /* justify-content: space-evenly; */
     /* jarak antar konten elemen dan batas container dibagi rata */
 
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     /* atribut flex wrap dngn value wrap ini akan membuat kita mempertahankan ukuran asli dari div atau
     element yang kita bungkus dan akan mencarikan tempat yang bisa digunakan untuk menampung elemen
     div lainya didalam container tersebut, jadi dngn ini yang tadinya kalau kita ingin mempertahankan ukuran
     kita harus memperbesar luas dari pembungkus, maka ini bisa kita gunakan tetapi krena dia mencari 
     lokasi kosong yang ada di container maka div div lain akan bergeser ke lokasi kosong tersebut */
 
-    flex-wrap: wrap-reverse;
+    /* flex-wrap: wrap-reverse; */
     /* seperti namanya reeverse, dia akan mengubah urutan elemen nya nomor satu akan mulai dari kanan
     
     NAH KALAU KITA MEMAKAI FLEX DIRECTION NYA ROW, maka urutan elemen akan dimulai dari bawah tetapi
     kalau memakai WRAP biasa dia akan mulai dari atas*/
+
+    /* KITA AKAN BELAJAR PENERAPAN ALIGN ITEM 
+    1.FLEX-START*/
+    /* align-items: flex-start; */
+    /* ini tidak akan berubah apa apa, tpi untuk membuktikan fungsinya, coba kita ubah dulu ukuran
+    dari setiap div(kotak) scara manual atau satu persatu, nah dngn begini akan kliatan perubahan nya
+    FLEX-START smua akan rata dimulai dari atas 
+    
+    2.Center */
+    align-items: center;
+    /* maka smua akan dimulai dari tengah 
+    
+    3.Flex-end*/
+    /* align-items: flex-end; */
+    /* maka smua akan dimulai dari bawah 
+    
+    FYI: ALIGN ITEM BISA DIKOMBINASIKAN DNGN JUSTIFY-CONTENT, CONTOH disini align item value nya flex
+    end, dan justify content kita juga bervalue sama. maka yg terjadi ialah div tadi di mulai dari bawah
+    dan mulai nya dari kanan dan posisinya terbalik sperti kita menggunakan flex-direction bervalue 
+    row-reverse
+    
+    4.Baseline*/
+    /* align-items: baseline; */
+
+    
 }
 .container div{
     height: 200px;
@@ -70,7 +95,5 @@ h1{
     sudah melewati container
     
     NAH DISINI KITA AKAN MENERAPKAN FLEX*/
-    color: red;
-    font-size: larger;
-    text-align: center;
+    
 }
