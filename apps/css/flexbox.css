@@ -5,7 +5,7 @@ h1{
 .container{
     background-color: #003049;
     width: 90%;
-    height: 500px;
+    /* height: 500px; */
     margin: 0 auto;
     /* ini dibuat supaya dia brada di tengah */
     border: 5px solid #003049;
@@ -48,7 +48,7 @@ h1{
     /* justify-content: space-evenly; */
     /* jarak antar konten elemen dan batas container dibagi rata */
 
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     /* atribut flex wrap dngn value wrap ini akan membuat kita mempertahankan ukuran asli dari div atau
     element yang kita bungkus dan akan mencarikan tempat yang bisa digunakan untuk menampung elemen
     div lainya didalam container tersebut, jadi dngn ini yang tadinya kalau kita ingin mempertahankan ukuran
@@ -63,13 +63,13 @@ h1{
 
     /* KITA AKAN BELAJAR PENERAPAN ALIGN ITEM 
     1.FLEX-START*/
-    align-items: flex-start;
+    /* align-items: flex-start; */
     /* ini tidak akan berubah apa apa, tpi untuk membuktikan fungsinya, coba kita ubah dulu ukuran
     dari setiap div(kotak) scara manual atau satu persatu, nah dngn begini akan kliatan perubahan nya
     FLEX-START smua akan rata dimulai dari atas 
     
     2.Center */
-    /* align-items: center; */
+    align-items: center;
     /* maka smua akan dimulai dari tengah 
     
     3.Flex-end*/
@@ -97,23 +97,41 @@ h1{
     
     NAH DISINI KITA AKAN MENERAPKAN FLEX*/
     
+    /* Nah skrg gimana kalau kita tambahkan flex basis */
+    flex-basis: 400px;
+    /* nah bisa diliat masing div atau elemen nya akan brubah 500px, krena direction nya row
+    maka yang diubah adalah width nya, kalau direction nya column maka yang diubah ialah height nya */
 }
 
 /* KITA AKAN BELAJAR MEMAKAI ALIGN-SELF
 sperti namanya ini digunakan ketika kita ingin mengubah suatu hal scara spesifik */
 
-.alself:hover{
+/* .alself:hover{
     align-self: center;
-}
+} */
 div:nth-of-type(1){
-    align-self: flex-start;
+    /* align-self: flex-start; */
+
+    /* contoh disini kita akan memasukan elemen flex-grow */
+    /* flex-grow: 1; */
+    /* nah jadi sisa jarak baik itu kanan dan kiri yang blum dipakai kita akan mengimplementasikan ke
+    dalam bagian kosong */
+
+    flex-shrink: 2;
+    /* ukurna nya akan mengecil terlebih dahulu kalau misalkan container nya lebih kecil ketimbang isi nya
+    maka akan mengecil terlebih dahulu di elemen yang kita berikan 
+    ini keterbalikan dari grow*/
 }
 div:nth-of-type(3){
-    align-self: self-end;
+    /* align-self: self-end; */
+
+    /* flex-grow: 5; */
+
+    flex-shrink: 2;
 }
-div:nth-of-type(4){
+/* div:nth-of-type(4){
     align-self: center;
 }
 div:nth-of-type(5){
     align-self: center;
-}
+} */
