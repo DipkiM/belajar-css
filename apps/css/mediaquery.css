@@ -1,0 +1,70 @@
+body {
+  font-family: "open-sans", sans-serif;
+}
+h1 {
+  font-size: 6em;
+  text-align: center;
+  color: crimson;
+}
+nav {
+  font-size: 1.5em;
+}
+ul,
+li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+/* @media (width:500px) {
+    h1{
+        color: aqua;
+    }
+    body{
+        background-color: black;
+    }
+} */
+/* tapi kalau bgini ini akan brupah pas ukuran pas di 500px, kalau dia brubah sdikit aja ke 501 atau 499 maka dia akan pindah ke bentuk awal sblom dirubah */
+/* @media screen and (min-width:500px) {
+    h1{
+        color: deeppink;
+    }
+    body{
+        background-color: black;
+    }
+} */
+@media screen and (min-width: 800px) {
+  h1 {
+    color: cyan;
+  }
+  body {
+    background-color: black;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h1 {
+    color: yellow;
+  }
+  body {
+    background-color: black;
+  }
+}
+/* ini akan membuat suatu perubahan dngn batas minimal, jadi minimal 500px dia akan merubah apa, minimal 800px dia akan membuat apa dan sterusnya */
+
+/* kita juga bisa memberikan sebuah range atau jarak ketika sudah di ukuran ini dia akan merubah ini
+ */
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  h1 {
+    color: deeppink;
+  }
+  body {
+    background-color: black;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  body {
+    background-color: darkmagenta;
+  }
+}
+/* nah dngn ini kita akan mengubah background color ketika layar landscape dia akan merubah warnanya menjadi darkmagenta */
