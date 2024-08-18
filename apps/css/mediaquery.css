@@ -8,10 +8,20 @@ h1 {
 }
 nav {
   font-size: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  /* ini akan membuat display nya flex dan konten nya diberi jarak */
 }
+ul {
+  border: 2px solid crimson;
+  flex: 1;
+  justify-content: space-evenly;
+  max-width: 50%;
+}
+
 ul,
 li {
-  display: inline;
+  display: flex;
   margin: 0;
   padding: 0;
 }
@@ -32,7 +42,7 @@ li {
         background-color: black;
     }
 } */
-@media screen and (min-width: 800px) {
+/* @media screen and (min-width: 800px) {
   h1 {
     color: cyan;
   }
@@ -47,13 +57,13 @@ li {
   body {
     background-color: black;
   }
-}
+} */
 /* ini akan membuat suatu perubahan dngn batas minimal, jadi minimal 500px dia akan merubah apa, minimal 800px dia akan membuat apa dan sterusnya */
 
 /* kita juga bisa memberikan sebuah range atau jarak ketika sudah di ukuran ini dia akan merubah ini
  */
 
-@media screen and (min-width: 300px) and (max-width: 600px) {
+/* @media screen and (min-width: 300px) and (max-width: 600px) {
   h1 {
     color: deeppink;
   }
@@ -66,5 +76,30 @@ li {
   body {
     background-color: darkmagenta;
   }
-}
+} */
 /* nah dngn ini kita akan mengubah background color ketika layar landscape dia akan merubah warnanya menjadi darkmagenta */
+
+/* MEMBUAT RESPONSIVE DESIGN DENGAN MIN-WIDTH & MAX-WIDTH */
+
+@media (max-width: 760px) {
+  h1 {
+    font-size: 4em;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+    /* nah align item center ini akan membuat bagian nav akan brada ditengah dan berbaris sperti kolom
+    ketika ukuran maksimal nya 760px atau lebih kecil */
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  /* ini akan membuat arah dri flex nav kita ketika brukuran maksimal 760 px akan menjadi sbuah kolom
+atau tidak mlanjutkan ruang kosong yang ada di barisnya */
+}
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+/* nah masalah nya kalau kita pindah ke layar yg lebih kecil maka dia kelihatan tidak cantik dan rapih */
